@@ -28,7 +28,7 @@ int main(){
             int size_B;
             cin>>size_B;
             cout<<endl;
-            
+
             int* setB = new int[size_B];    // allocating memory at runtime and assigning the address to pointer "setB"
              cout<<"Enter the elements of set B : ";
             inputArray(setB, size_B);
@@ -63,6 +63,39 @@ int main(){
 
             cout<<"}";
 
+            // A x B
+
+            cout<<endl;
+            cout<<endl;
+
+
+            cout<<"A x B : {";
+            
+            for(int i=0 ; i<size_A ; i++){
+                for(int j=0 ; j<size_B ; j++){
+
+                    cout<<"("<<setA[i]<<","<<setB[j]<<")";
+
+                }
+                if( i != size_A-1)
+                    cout<<",";
+            }
+            cout<<"}";
+            cout<<endl<<endl;
+
+            // BxA
+             cout<<"B x A : {";
+            
+            for(int i=0 ; i<size_B ; i++){
+                for(int j=0 ; j<size_A ; j++){
+
+                    cout<<"("<<setB[i]<<","<<setA[j]<<")";
+
+                }
+                if( i != size_B-1)
+                    cout<<",";
+            }
+            cout<<"}";
 
      // }   
 
